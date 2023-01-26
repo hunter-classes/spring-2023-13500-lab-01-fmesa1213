@@ -4,7 +4,7 @@ Course: CSCI-135
 Instructor: 
 Assignment: Lab1A
 
-Wrote a program that that asks the user to input two integer numbers and prints out the smaller of the two.
+Wrote a program that asks the user to input two integer numbers and prints out the smaller of the two.
 */
 
 #include <iostream>
