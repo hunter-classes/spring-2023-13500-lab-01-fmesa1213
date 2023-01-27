@@ -12,5 +12,16 @@ using namespace std;
 
 int main()
 {
-
+  int year;
+  int month;
+  
+  cout << "Enter year: " << endl;
+  cin >> year;
+  
+  cout << "Enter month: " << endl;
+  cin >> month;
+  
+  
+  
+  
 }
