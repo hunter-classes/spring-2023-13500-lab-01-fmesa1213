@@ -35,4 +35,5 @@ int main ()
   {
     cout << "Leap year " << endl;
   }
+  return 0;
 }
