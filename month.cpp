@@ -23,8 +23,25 @@ int main()
   cin >> month;
   
   
-  if ((year%4 == 0) || (year%400 == 0))
+      if (!(year%4 == 0))
+    {
+    if ((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10)|| (month == 12))
   {
+   cout << "31 days" << endl;
+  }
+     
+  else if ((month == 4) || (month == 6) || (month == 9) || (month == 11))
+  {
+   cout << "30 days" << endl;
+  } 
+  else 
+    {
+   cout << "28 days" << endl;
+  } 
+  }
+    
+  else if (!(year%100 == 0))
+   {
     if ((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10)|| (month == 12))
   {
    cout << "31 days" << endl;
@@ -39,10 +56,10 @@ int main()
    cout << "29 days" << endl;
   } 
   }
-  
-  else 
-  {
-      if ((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10)|| (month == 12))
+   
+  else if (!(year%400 == 0))
+{
+    if ((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10)|| (month == 12))
   {
    cout << "31 days" << endl;
   }
@@ -56,7 +73,22 @@ int main()
    cout << "28 days" << endl;
   } 
   }
-  
+  else 
+{
+    if ((month == 1) || (month == 3) || (month == 5) || (month == 7) || (month == 8) || (month == 10)|| (month == 12))
+  {
+   cout << "31 days" << endl;
+  }
+     
+  else if ((month == 4) || (month == 6) || (month == 9) || (month == 11))
+  {
+   cout << "30 days" << endl;
+  } 
+  else 
+    {
+   cout << "29 days" << endl;
+  } 
+  }
   return 0;
 }
 
